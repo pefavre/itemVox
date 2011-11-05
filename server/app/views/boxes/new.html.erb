@@ -1,2 +1,5 @@
-<h1>Boxes#new</h1>
-<p>Find me in app/views/boxes/new.html.erb</p>
+<% title "New Box" %>
+
+<%= render 'form' %>
+
+<p><%= link_to "Back to List", boxes_path %></p>

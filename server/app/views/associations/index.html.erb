@@ -1,0 +1,19 @@
+<% title "Associations" %>
+
+<table>
+  <tr>
+    <th>Rfid</th>
+    <th>Uri</th>
+  </tr>
+  <% for association in @assocations %>
+    <tr>
+      <td><%= association.RFID %></td>
+      <td><%= association.URI %></td>
+      <td><%= link_to "Show", association %></td>
+      <td><%= link_to "Edit", edit_association_path(association) %></td>
+      <td><%= link_to "Destroy", association, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Association", new_association_path(association) %></p>

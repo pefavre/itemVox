@@ -1,0 +1,12 @@
+<%= form_for @association do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :RFID %><br />
+    <%= f.text_field :RFID %>
+  </p>
+  <p>
+    <%= f.label :URI %><br />
+    <%= f.text_field :URI %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

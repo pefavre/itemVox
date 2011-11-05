@@ -1,0 +1,16 @@
+<% title "Association" %>
+
+<p>
+  <strong>Rfid:</strong>
+  <%= @association.RFID %>
+</p>
+<p>
+  <strong>Uri:</strong>
+  <%= @association.URI %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_association_path(@association) %> |
+  <%= link_to "Destroy", @association, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", associations_path %>
+</p>

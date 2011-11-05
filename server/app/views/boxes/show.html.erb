@@ -1,0 +1,16 @@
+<% title "Box" %>
+
+<p>
+  <strong>Lastrfid:</strong>
+  <%= @box.lastRFID %>
+</p>
+<p>
+  <strong>Lastemptyrfid:</strong>
+  <%= @box.lastEmptyRFID %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_box_path(@box) %> |
+  <%= link_to "Destroy", @box, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", boxes_path %>
+</p>
