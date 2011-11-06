@@ -47,6 +47,7 @@ int main(int argc, char* argv[])
 		return 1;
 	}
 	printf("SERIAL %ls\n", wstr);
+	fflush(stdout);
 
 
 	// Read requested state. hid_read() has been set to be
@@ -81,6 +82,7 @@ int main(int argc, char* argv[])
 						}
 						default: printf("ERR\n"); break ;
 					}
+					fflush(stdout);
 				}
 			}
 			usleep(1000);
