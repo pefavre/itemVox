@@ -1,9 +1,15 @@
 #!/usr/bin/python
 
-import os
+import os, sys
 import serial
 
-se = serial.Serial('/dev/tty.usbmodemfd121', 9600)
+if (len(sys.argv) < 2):
+	print "need /dev/tty.usb* arg"
+	quit()
+
+ttyArduino = sys.argv[1]
+
+se = serial.Serial(ttyArduino, 9600)
 
 serial=''
 
