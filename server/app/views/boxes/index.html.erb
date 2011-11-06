@@ -1,0 +1,19 @@
+<% title "Boxes" %>
+
+<table>
+  <tr>
+    <th>Lastrfid</th>
+    <th>Lastemptyrfid</th>
+  </tr>
+  <% for box in @boxes %>
+    <tr>
+      <td><%= box.lastRFID %></td>
+      <td><%= box.lastEmptyRFID %></td>
+      <td><%= link_to "Show", box %></td>
+      <td><%= link_to "Edit", edit_box_path(box) %></td>
+      <td><%= link_to "Destroy", box, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Box", new_box_path(box) %></p>

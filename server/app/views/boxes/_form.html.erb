@@ -1,0 +1,12 @@
+<%= form_for @box do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :lastRFID %><br />
+    <%= f.text_field :lastRFID %>
+  </p>
+  <p>
+    <%= f.label :lastEmptyRFID %><br />
+    <%= f.text_field :lastEmptyRFID %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
