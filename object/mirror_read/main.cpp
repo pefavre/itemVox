@@ -35,17 +35,18 @@ int main(int argc, char* argv[])
 	////handle = hid_open(0x4d8, 0x3f, L"12345");
 	handle = hid_open(0x1da8, 0x1301, NULL);
 	if (!handle) {
-		printf("unable to open device\n");
+		fprintf(stderr, "unable to open device\n");
  		return 1;
 	}
 
 	// Read the Serial Number String
 	wstr[0] = 0x0000;
 	res = hid_get_serial_number_string(handle, wstr, MAX_STR);
-	if (res < 0)
-		printf("Unable to read serial number string\n");
-	printf("SERIAL %ls", wstr);
-	printf("\n");
+	if (res < 0) {
+		fprintf(stderr, "Unable to read serial number string\n");
+		return 1;
+	}
+	printf("SERIAL %ls\n", wstr);
 
 
 	// Read requested state. hid_read() has been set to be
