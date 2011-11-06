@@ -1,0 +1,3 @@
+This part only reads the tags from the rfid reader mir:ror. 
+
+Uses hidapi, cloned from git://github.com/signal11/hidapi.git
