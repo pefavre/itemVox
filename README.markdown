@@ -1,3 +1,3 @@
-# itemVox: First version
+# NoiseBox: First version
 
-This is [*itemVox*](http://itemvox.com/), a [HackDayParis](http://hackdayparis.org/) music player hack.
+This is [*NoiseBox*](http://www.diy-noisebox.com/), a [HackDayParis](http://hackdayparis.org/) music player hack.
