@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<%= yield %>
+	<%= render 'layouts/ga' if Rails.env.production? %>
 </html>
 
