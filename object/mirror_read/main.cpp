@@ -85,7 +85,7 @@ int main(int argc, char* argv[])
 					fflush(stdout);
 				}
 			}
-			usleep(1000);
+			usleep(15000);
 		}
 	}
 
