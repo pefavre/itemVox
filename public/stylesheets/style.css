@@ -1,0 +1,117 @@
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+artwork, photo, sidebar, messages, message, info, location, feed, article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, masthead, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, info, location, artwork, photo, message, messages, sidebar, feed, aside, canvas, figure, photo img, figcaption, hgroup,
+footer, header, masthead, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large, h2 { 
+	font-size: 42px;
+	line-height: 36px;
+	letter-spacing: -2px;
+	font-weight: 500;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.big, h4 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+body {
+	font: 20px Futura, Gill sans, sans-serif;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: #fff;}
+::-moz-selection 	{background: #fff;}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: transparent}
+
+
+/* Links */
+
+a {
+  color: #74806c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #74806c;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #74806c;
+}
+
+body {
+	position: relative;
+	padding: 24px 0;
+    background-image: url(../../images/background.jpg);
+    background-repeat: repeat;
+    background-color: #D5D0B2;
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto; 
+}
+
+.content {
+
+	padding: 10px 0;
+}
+
+a img {
+    display: block;
+    margin: 1em auto; 
+}
+
+p, h1, h2, img {
+	padding-bottom: 1em;
+	color: #4a493f;
+}

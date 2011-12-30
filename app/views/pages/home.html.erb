@@ -1,85 +1,9 @@
-<head>
-<meta charset="UTF-8">
-<title>NoiseBox</title>
-<link rel="icon" type="image/png" href="favicon.png" />
-<style type="text/css">
-<!--
-body {
-	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-	background: #42413C;
-	margin: 0;
-	padding: 0;
-	color: #000;
-}
-
-/* ~~ Sélecteurs d'éléments/balises ~~ */
-ul, ol, dl { /* En raison des variations entre les navigateurs, il est conseillé d'attribuer une valeur de zéro aux marges intérieures et aux marges des listes. A des fins de cohérence, vous pouvez définir les valeurs désirées dans cette zone ou dans les éléments de liste (LI, DT, DD) qu'elle contient. N'oubliez pas que les paramètres que vous définissez ici se répercuteront sur la liste .nav, sauf si vous rédigez un sélecteur plus spécifique. */
-	padding: 0;
-	margin: 0;
-}
-h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;	 /* la suppression de la marge supérieure résout un problème où les marges sortent de leur div conteneur. La marge inférieure restante l'éloignera de tout élément qui suit. */
-	padding-right: 15px;
-	padding-left: 15px; /* l'ajout de la marge intérieure aux côtés des éléments à l'intérieur des divs, et non aux divs proprement dit, évite le recours à des calculs de modèle de boîte. Une autre méthode consiste à employer une div imbriquée avec marge intérieure latérale. */
-}
-a img { /* ce sélecteur élimine la bordure bleue par défaut affichée dans certains navigateurs autour d'une image lorsque celle-ci est entourée d'un lien. */
-	border: none;
-}
-/* ~~ La définition du style des liens de votre site doit respecter cet ordre, y compris le groupe de sélecteurs qui créent l'effet de survol. ~~ */
-a:link {
-	color: #42413C;
-	text-decoration: underline; /* à moins que vous ne définissiez un style particulièrement exclusif pour vos liens, mieux vaut prévoir un soulignement, qui garantit une identification visuelle rapide. */
-}
-a:visited {
-	color: #6E6C64;
-	text-decoration: underline;
-}
-a:hover, a:active, a:focus { /* ce groupe de sélecteurs offrira à un navigateur au clavier la même expérience de survol que celle d'une personne employant la souris. */
-	text-decoration: none;
-}
-
-/* ~~ ce conteneur à largeur fixe entoure tous les autres éléments ~~ */
-.container {
-	width: 960px;
-	background: #FFF;
-	margin: 0 auto; /* la valeur automatique sur les côtés, associée à la largeur, permet de centrer la mise en page */
-}
-
-/* ~~ Informations de mise en page. ~~ 
-
-1) La marge intérieure n'est placée qu'en haut et/ou en bas de la div. Les éléments à l'intérieur de cette div posséderont une marge intérieure sur les côtés. Vous évitez ainsi de devoir recourir à des « calculs de modèle de boîte ». N'oubliez pas que si vous ajoutez une marge intérieure latérale ou une bordure à la div proprement dite, elle sera ajoutée à la largeur que vous définissez pour créer la largeur totale. Vous pouvez également supprimer la marge intérieure de l'élément dans la div et placer une seconde div à l'intérieur, sans largeur et possédant une marge intérieure appropriée pour votre concept.
-
-*/
-.content {
-
-	padding: 10px 0;
-}
-
-/* ~~ classes flottant/effacement diverses ~~ */
-.fltrt {  /* cette classe peut servir à faire flotter un élément depuis la droite sur votre page. L'élément flottant doit précéder l'élément à côté duquel il doit apparaître sur la page. */
-	float: right;
-	margin-left: 8px;
-}
-.fltlft { /* cette classe peut servir à faire flotter un élément depuis la gauche sur votre page. L'élément flottant doit précéder l'élément à côté duquel il doit apparaître sur la page. */
-	float: left;
-	margin-right: 8px;
-}
-.clearfloat { /* cette classe peut être placée sur une div <br /> ou vide, en tant qu'élément final suivant la dernière div flottante (dans le #container) si le paramètre overflow:hidden du .container est supprimé */
-	clear:both;
-	height:0;
-	font-size: 1px;
-	line-height: 0px;
-}
--->
-</style></head>
-
-<body>
-
 <div class="container">
   <div class="content">
-  
-  	<h1 align="center">NoiseBox</h1>
-	<h2 align="center">Give the music you like</br>the importance it deserves</h2>
+  	<% logo = image_tag("logo.png", :alt => "NoiseBox") %>
+	<%= link_to logo, root_path %>
+  	<!-- <h1 align="center">NoiseBox</h1> -->
+	<h2 align="center">give the music you like</br>the importance it deserves</h2>
   	<p align="center">
   	  <iframe width="560" height="315" src="http://www.youtube.com/embed/jikHNwRNBwU" frameborder="0" allowfullscreen></iframe>
     </p>
@@ -95,5 +19,6 @@ a:hover, a:active, a:focus { /* ce groupe de sélecteurs offrira à un navigateu
   </p>
     <p>The whole set is DIY, and you're in control of your collection growth. So that you give the music you like the importance it deserves.</p>
     <p>Follow us <a href="http://twitter.com/#!/NoiseBoxTeam" target="_blank">@NoiseBoxTeam</a> to stay tuned! You can also send us an <a href="mailto:noiseboxteam@gmail.com">email</a>.</p>
-<p>NoiseBox is the proud winning hack of <a href="http://hackdayparis.org/" target="_blank">Hack Day Paris 2011</a>, and has been made with love and scissors by <a href="http://twitter.com/#!/pierregerlach" target="_blank">Pierre-Rudolf Gerlach</a>, <a href="http://twitter.com/#!/oli_bre" target="_blank">Olivier Bréchon</a>, and <a href="http://twitter.com/#!/pefavre" target="_blank">Pierre Etienne Favre</a>.</p>
-</body>
+<p>NoiseBox is the proud winning hack of <a href="http://hackdayparis.org/" target="_blank">Hack Day Paris 2011</a>, and has been made with love and scissors by <a href="http://twitter.com/#!/pierregerlach" target="_blank">Pierre-Rudolf Gerlach</a>, <a href="http://twitter.com/#!/oli_bre" target="_blank">Olivier Bréchon</a>, and <a href="http://twitter.com/#!/pefavre" target="_blank">Pierre-Etienne Favre</a>.</p>
+</div>
+</div>
